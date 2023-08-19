@@ -48,9 +48,19 @@ h2 {
     width: 50px;
     height: 50px;
     border: 1px solid white;
+    position: relative;
 }
-.apple {
+.cell.apple::before {
+    content: '';
+    display: block;
     background-color: rgb(189, 17, 17);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .snake {
     background-color: #31a73f;
